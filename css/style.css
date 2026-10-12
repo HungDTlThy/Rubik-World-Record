@@ -49,12 +49,12 @@ nav ul {
   justify-content: center;
   gap: 25px;
   list-style: circle;
-  margin: 5;
+  margin: 0;
   padding: 20px;
 }
 nav a {
   color: #efd7d7;
-  text-decoration:hwb(from color 240 10% 90%);
+  text-decoration: none;
   padding: 10px 15px;
   border-radius: 10px;
 }
