@@ -1,0 +1,75 @@
+body
+{
+  font-family:'Comic Sans MS', sans-serif;
+  font-size: 120%;
+}
+
+header
+{
+  background-color: #7fffd4;
+}
+
+nav
+{
+  /* background-color: #7fffd4; */
+  display: inline-block;
+  width: 80%;
+}
+
+nav img
+{
+  width: 10%; 
+}
+
+main
+{
+  background-color: #ffe4c4;
+  font-size: 15px;
+}
+
+footer
+{
+  background-color: #f0ffff;
+}
+
+/*
+li
+{
+  display: inline-flex;
+  width: 200px;
+}
+*/
+
+.grid
+{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  row-gap: 10px;
+  align-items: stretch;
+
+}
+
+.grid img
+{
+  width: 100%;
+}
+
+.flex
+{
+  display: flex;
+  justify-content:left;
+  flex-wrap: wrap;
+}
+
+h1
+{
+  text-align: justify ;
+  font-family: "Courier New", monospace;
+  color: #006400;
+}
+
+p
+{
+  line-height: 1.5;
+}
