@@ -1,75 +1,119 @@
-body
-{
-  font-family:'Comic Sans MS', sans-serif;
-  font-size: 120%;
-}
-
-header
-{
-  background-color: #7fffd4;
-}
-
-nav
-{
-  /* background-color: #7fffd4; */
-  display: inline-block;
-  width: 80%;
-}
-
-nav img
-{
-  width: 10%; 
-}
-
-main
-{
-  background-color: #ffe4c4;
-  font-size: 15px;
-}
-
-footer
-{
-  background-color: #f0ffff;
-}
-
-/*
-li
-{
-  display: inline-flex;
-  width: 200px;
-}
-*/
-
-.grid
-{
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: space-between;
-  row-gap: 10px;
-  align-items: stretch;
-
-}
-
-.grid img
-{
-  width: 100%;
-}
-
-.flex
-{
-  display: flex;
-  justify-content:left;
-  flex-wrap: wrap;
-}
-
-h1
-{
-  text-align: justify ;
-  font-family: "Courier New", monospace;
-  color: #006400;
-}
-
-p
-{
+/* ===== Chung ===== */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 20px;
   line-height: 1.5;
+  margin: 0.5em;
+  background-color: #f8f4f7;
+  color: #1c2d28;
+}
+
+/* ===== 3. Skip link: chỉ hiện khi focus ===== */
+.skip-link {
+  position: absolute;
+  top: -120px;
+  left: 20px;
+  background-color: #13112f;
+  color: #edd2d2;
+  padding: 15px 20px;
+  z-index: 120;
+}
+.skip-link:focus {
+  top: 20px;
+}
+
+/* ===== Header, footer ===== */
+header {
+  background-color: #0d2b1d;
+  color: #f5e8e8;
+  padding: 15px 15px;
+}
+h1 {
+  margin: 15px 0;
+  text-align: center;
+  
+}
+footer {
+  background-color: #101036;
+  color: #f3dddd;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== 4 + 7. Navigation dùng flex ===== */
+nav {
+  background-color: #0b183e;
+}
+nav ul {
+  display: inline-flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: circle;
+  margin: 5;
+  padding: 20px;
+}
+nav a {
+  color: #efd7d7;
+  text-decoration:hwb(from color 240 10% 90%);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #c3601a;
+  color: #0f0909;
+}
+
+
+main {
+  padding: 25px;
+}
+
+/* ===== 5. Ảnh theo box model ===== */
+img {
+  border: 5px solid #c3601a;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  background-color: #fef1f1;
+}
+
+
+.grid {
+  display: inline-block;
+  grid-template-columns: 2fr 2fr;
+  gap: 25px;
+}
+.grid img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+.flex img {
+  width: 210px;
+}
+
+
+img {
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(46, 15, 15, 0.4);
+}
+
+/* ===== 9. nth-child ===== */
+.grid img:nth-child(even) {
+  border-radius: 60px;
+}
+.flex img:nth-child(odd) {
+  border-radius: 60%;
 }
