@@ -42,13 +42,16 @@ footer {
 
 
 nav {
+  
   background-color: #0b183e;
+  text-align: center;
+  width: 100%;
 }
 nav ul {
   display: inline-flex;
   justify-content: center;
   gap: 25px;
-  list-style: circle;
+  list-style: none;
   margin: 0;
   padding: 20px;
 }
@@ -86,7 +89,7 @@ img {
   gap: 25px;
 }
 .grid img {
-  width: 100%;
+  width: 25%;
   box-sizing: border-box;
 }
 
@@ -98,7 +101,9 @@ img {
   gap: 15px;
 }
 .flex img {
-  width: 210px;
+  justify-content: center;
+  height: auto;
+  width: 100%;
 }
 
 
